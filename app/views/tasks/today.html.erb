@@ -1,0 +1,9 @@
+<h1>Tasks for Today</h1>
+
+<% @tasks.each do |task| %>
+  <p>
+    <strong>Title:</strong> <%= task.title %><br>
+    <strong>Description:</strong> <%= task.description %><br>
+    <strong>Due:</strong> <%= task.due_date %>
+  </p>
+<% end %>
